@@ -1,0 +1,140 @@
+body ,html{
+    width: 100%;
+    height: 100%;
+    margin:0px;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.nav{
+    /* background-color:grey; */
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h4{
+        font-size:1vw;
+    }
+    i{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: none;
+        font-size: 1.6vw;
+    }
+    h2{
+        font-size: 2vw;
+    }
+}
+.nav-part2{
+    display: flex;
+    gap:2vw;
+    /* background-color: red; */
+    padding-right: 1vw;
+}
+.logo{
+    padding-left: 1vw;
+    font-size: 2vw;
+    font-weight: 700;
+}
+@media (max-width:600px){
+    /* i{
+        display: block;
+    } */
+     .logo{
+        padding-left: 2vw;
+        color: black;
+     }
+     .nav{
+        /* background: lightsalmon; */
+        color: #fff;
+        i{
+            display:block;
+            font-size: 6vw;
+            /* color: red; */
+         }
+         height: 60px;
+         i{
+            color: black;
+         }
+     }
+     .nav-part2{
+        padding-right:2vw;
+     }
+     .nav h2{
+        font-size: 6vw;
+     }
+     .nav h4{
+        font-size: 4vw;
+        display: none;
+     }
+     .content{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        .left{
+            height: 20%;
+            margin-left: 3vw;
+        }
+        .right{
+            margin-top: 0px;
+            /* margin-left: 4vw; */
+            height: 50%;
+            display: flex;
+            justify-content: center;
+            margin-left: 10vw;
+            align-items: center;
+            margin-bottom: 30vh;
+        }
+     }
+    
+}
+.content{
+    width: 100%;
+    height:calc(100% - 100px);
+    /* background-color: #9f8859; */
+    display:flex;
+    flex-direction: row;
+    position: absolute;
+}
+.left{
+    /* background-color: #e3ec5b; */
+    width: 55%;
+    height: 100%;
+    padding:0vw 4vw;
+    h1{
+        font-size: 5vw;
+    
+    }
+    h1 span{
+        color: lightseagreen;
+    }
+    p{
+        font-size: 1vw;
+        font-family: cursive;
+        font-weight: 800;
+    }
+}
+button{
+    font-size: 1.5vw;
+    padding: 0.5vw 1vw;
+    background-color: lightseagreen;
+    color: #fff;
+    border-radius: 8px;
+    font-weight: 800;
+    border: none;
+
+}
+.right{
+    background-color: #ffffff;
+    width: 45%;
+    height: 100%;
+    img{
+        width:45vw;
+        height:37vw;
+    }
+}
